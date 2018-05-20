@@ -31,9 +31,12 @@ folder.append("in/w")
 folder.append("in/s")
 folder.append("out")
 checkFolders(folder)
+print("Folder check finised...")
+
 directories = ['n','s','e','w']
 res = command("ls in/")
+print(res)
 for r in res:
 	if r in directories:
 		command("java -jar runnable-texturepacker.jar in/"+r+"/ out/"+" "+r+" pack.json")
-print("======[Finished]======")
+print("======[Finished]======")	
