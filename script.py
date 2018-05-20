@@ -25,6 +25,10 @@ print("=======[Starting]======")
 print("Checking folders...")
 folder = []
 folder.append("in")
+folder.append("in/n")
+folder.append("in/e")
+folder.append("in/w")
+folder.append("in/s")
 folder.append("out")
 checkFolders(folder)
 directories = ['n','s','e','w']
