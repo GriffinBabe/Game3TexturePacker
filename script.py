@@ -37,6 +37,8 @@ directories = ['n','s','e','w']
 res = command("ls in/")
 print(res)
 for r in res:
+	r = r.decode("UTF-8")
 	if r in directories:
+		print("Calling java for "+r)
 		command("java -jar runnable-texturepacker.jar in/"+r+"/ out/"+" "+r+" pack.json")
 print("======[Finished]======")	
